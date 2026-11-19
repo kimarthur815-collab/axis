@@ -126,6 +126,7 @@ button small{font-size:12px;opacity:.7;margin-left:6px}button[data-key]::after{c
 .onNote{text-align:center;min-height:0;padding:0;max-width:420px}#onMe .wsel{padding:0}#onArena{justify-content:center;margin-top:8px}#onArena button{font-size:15px;padding:5px 14px;border-width:2px}#onMe.mid .wsel,#onMe.mid>.onNote{display:none}.onPh{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:8px}.onPh canvas{width:120px;height:120px;image-rendering:pixelated;background:#fff}.onPh p{max-width:220px;min-height:0;padding:0}
 @media (max-height:520px){#online .kin{gap:6px;padding:10px 16px}.onPh canvas{width:84px;height:84px}#online h2{font-size:24px}.onBig{font-size:36px}#onArena{margin-top:4px}#online #onStatus{display:block}}
 .onName{display:flex;gap:8px;align-items:center;justify-content:center;font-size:15px}.onName input{width:8.5em;font:inherit;font-size:17px;background:#1c1922;color:#fff;border:2px solid var(--gold);padding:4px 8px}
+.bMode{justify-content:center}.bMode button{font-size:16px;padding:6px 14px}#onTeam{justify-content:center;margin:2px 0 6px}#onTeam button{min-width:96px}#onTeam button[data-t="0"][aria-pressed="true"]{background:#4f7ff0;color:#fff}#onTeam button[data-t="1"][aria-pressed="true"]{background:#ea4d47;color:#fff}#onTeam button:disabled{opacity:.4}#onList li.thead{border:0;padding:4px 2px 0;font-size:14px;color:var(--gold)}
 #onType{justify-content:center}#onType button{font-size:15px;padding:6px 12px}#onType button:disabled{opacity:.45}#onBNBox{font-size:16px}#onBNBox b{font-size:34px}#onBNBox button{font-size:22px;width:44px}
 #onList{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:3px;min-width:min(360px,86vw)}#onList li{display:flex;align-items:center;gap:8px;padding:3px 10px;border:2px solid #3a3440;font-size:15px}#onList li i{width:12px;height:12px;border:1px solid #000;flex:none}#onList li span{flex:1}#onList li em{font-style:normal;color:#d8cfa8;font-size:13px}#onList li.bots{color:#a9a2b2;justify-content:center}
 @media (max-height:520px){#onList li{padding:1px 8px;font-size:13px}.onName{font-size:13px}}
@@ -298,7 +299,7 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
   <section id="title">
     <div class="tin">
       <h1>AXIS</h1>
-      <p class="ver" id="ver">v0.29</p>
+      <p class="ver" id="ver">v0.30</p>
       <div class="cards">
         <article class="card p1">
           <img src="data:image/jpeg;base64,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" alt="1P 청기사: 남색 겉옷과 십자 방패를 든 강철 갑옷 기사">
@@ -456,10 +457,12 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
         <li>도전자의 무기는 매번 바뀌고, 많이 쓰러뜨릴수록 강해진다. 세 명마다 경기장이 바뀐다</li>
         <li>쓰러지면 끝. 쓰러뜨린 수의 최고 기록이 저장된다</li></ul>
       <h3>난투 (B)</h3>
-      <ul><li>최대 10명이 한 경기장에서 모두와 싸운다. 마지막까지 서 있는 기사가 이긴다. 경기장은 1:1보다 훨씬 넓다(지름 약 1.7배)</li>
-        <li>메인 화면에서 난투를 누르고 −·+로 인원(2~10명)을 고른다. 나 말고는 모두 컴퓨터이고 무기는 제각각, 세기는 메인 화면에서 고른 난이도를 따른다</li>
+      <ul><li>최대 10명이 한 경기장에서 싸운다. 경기장은 1:1보다 훨씬 넓다(지름 약 1.7배). 메인 화면에서 난투를 누르고 개인전이나 팀전을 고른 뒤 −·+로 인원을 정한다</li>
+        <li>개인전: 모두가 모두와 싸우고(2~10명), 마지막까지 서 있는 기사가 이긴다</li>
+        <li>팀전 (반반): 청팀과 홍팀으로 반씩 나눠 싸운다(2 대 2 ~ 5 대 5). 상대 팀을 모두 쓰러뜨리면 이긴다. 같은 편끼리는 무기가 서로 지나가고 다치지 않는다. 옷 색과 발밑 고리(파랑 · 빨강)로 편을 알 수 있다</li>
+        <li>혼자 할 때는 나 말고 모두 컴퓨터(팀전이면 우리 편도)이고 무기는 제각각, 세기는 메인 화면에서 고른 난이도를 따른다</li>
         <li>저마다 가장 가까운 상대와 싸우고, 방금 자기를 때린 상대 쪽으로 돌아서기 쉽다. Tab(터치는 위쪽 🎯 목표, 게임패드는 Y)을 누르면 가까운 다른 상대로 목표를 바꾼다</li>
-        <li>한 판 승부. 쓰러지면 남은 싸움을 지켜본다. 화면 한쪽 표에 남은 기사와 처치 수가 나오고(★는 사람), 끝나면 순위가 나온다</li>
+        <li>한 판 승부. 쓰러지면 남은 싸움을 지켜본다(팀전이면 살아 있는 우리 편의 눈으로, 사람이 먼저). 화면 한쪽 표에 남은 기사와 처치 수가 나오고(★는 사람), 끝나면 순위나 팀 결과가 나온다</li>
         <li>온라인으로 여럿이 할 수도 있다(아래 온라인 대전)</li></ul>
       <h3>온라인 대전 (O)</h3>
       <ul><li>한 사람이 온라인 → 방 만들기를 누르고, 나온 코드 다섯 자리나 초대 링크를 상대에게 보낸다. 상대는 온라인 → 코드를 넣고 참가(링크를 열면 바로 참가)</li>
@@ -467,8 +470,9 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
         <li>들어온 쪽도 1P 키(WASD)와 2P 키를 모두 쓸 수 있고, 게임패드도 된다. 폰을 무기 손잡이로 쓰려면 온라인 창의 QR 코드를 폰으로 찍는다</li>
         <li>일시 정지는 방을 만든 쪽만 할 수 있다. 들어온 쪽은 경기 중에 Esc(터치는 ⏸, 게임패드는 Start)를 누르면 온라인 창이 열리고, 거기서 방을 나갈 수 있다</li>
         <li>게임은 방을 만든 컴퓨터에서 돌아가고, 들어온 쪽은 그 화면을 받아 본다. 인터넷이 느리면 들어온 쪽이 조금 늦게 보일 수 있고, 회사나 학교 같은 일부 네트워크에서는 연결이 안 될 수 있다</li>
-        <li>난투 방: 방 만들기를 누른 뒤 방 종류에서 '난투 (최대 10명)'을 고르고 −·+로 인원을 정한다. 9명까지 코드나 링크로 들어올 수 있고, 모자라는 자리는 컴퓨터가 채운다</li>
-        <li>난투 방에 들어오는 사람은 온라인 창에서 이름을 적고 무기를 고른다. 모두 모이면 방장이 난투 시작을 누른다. 경기 중에 누가 나가면 그 기사는 컴퓨터가 이어서 싸운다</li>
+        <li>난투 방: 방 만들기를 누른 뒤 방 종류에서 '난투 (최대 10명)'을 고르고, 개인전이나 팀전 (반반)을 고른 뒤 −·+로 인원을 정한다. 9명까지 코드나 링크로 들어올 수 있고, 모자라는 자리는 컴퓨터가 채운다</li>
+        <li>팀전 방에서는 저마다 온라인 창에서 청팀이나 홍팀을 고른다(들어오면 사람이 적은 쪽에 먼저 앉는다). 한 팀에 사람은 5명까지. 한쪽에 사람이 더 많으면 인원이 그만큼 늘고, 빈자리는 팀마다 컴퓨터가 채운다</li>
+        <li>난투 방에 들어오는 사람은 온라인 창에서 이름을 적고 무기를 고른다. 모두 모이면 방장이 난투 시작(팀전이면 팀전 시작)을 누른다. 경기 중에 누가 나가면 그 기사는 컴퓨터가 이어서 싸운다</li>
         <li>사람이 많을수록 방장 쪽 인터넷(특히 올리기 속도)이 중요하다. 방장은 되도록 연결이 좋은 곳에서</li></ul>
       <h3>방어</h3>
       <ul><li>무기가 부딪히는 순간 반대 방향으로 밀면 패링. 상대가 크게 휘청인다</li>
@@ -500,7 +504,13 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
   </section>
   <section id="notes" hidden aria-label="패치 노트">
     <div class="nin">
-      <div class="nhead"><h2>패치 노트 <small style="font-size:16px;color:var(--gold)">AXIS v0.29</small></h2><button type="button" id="notesClose">닫기</button></div>
+      <div class="nhead"><h2>패치 노트 <small style="font-size:16px;color:var(--gold)">AXIS v0.30</small></h2><button type="button" id="notesClose">닫기</button></div>
+      <h3>v0.30 · 11월 19일</h3>
+      <ul><li>팀전 추가: 난투에서 개인전과 팀전 (반반)을 고른다. 청팀과 홍팀으로 나눠 2 대 2부터 5 대 5까지, 상대 팀을 모두 쓰러뜨리면 승리</li>
+        <li>같은 편끼리는 무기가 서로 지나가고 다치지 않는다. 옷이 팀 색으로 바뀌고 발밑에 파란 · 빨간 고리가 생겨 편을 알아보기 쉽다</li>
+        <li>쓰러지면 살아 있는 우리 편의 눈으로 관전(사람이 먼저). 결과 화면에 팀 승패, 팀별 처치 수, 최다 처치</li>
+        <li>온라인 팀전: 난투 방에서 팀전 (반반)을 고르면 저마다 청팀이나 홍팀을 고른다. 한 팀에 사람 5명까지, 빈자리는 팀마다 컴퓨터. 2 대 2부터 5 대 5까지 10명</li>
+        <li>고침: 온라인 난투에서 3번째 자리부터의 기사가 떨어뜨린 투구 · 무기 같은 조각이 들어온 쪽 화면에 안 보이던 문제</li></ul>
       <h3>v0.29 · 11월 19일</h3>
       <ul><li>난투(B) 추가: 최대 10명이 한꺼번에 싸우고, 마지막까지 서 있는 기사가 이긴다. 메인 화면에서 인원(2~10명)을 고르면 나머지는 무기가 제각각인 컴퓨터</li>
         <li>난투 경기장은 1:1 경기장보다 지름이 약 1.7배(넓이는 약 3배) 크다. 1:1 경기장은 그대로</li>
@@ -671,12 +681,14 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
       </div>
       <div id="onRoom" hidden>
         <div class="seg" id="onType" role="group" aria-label="방 종류"><button type="button" data-t="duel" aria-pressed="true">1:1 결투</button><button type="button" data-t="brawl" aria-pressed="false">난투 (최대 10명)</button></div>
-        <div class="brawlN" id="onBNBox" hidden><button type="button" id="onBMinus" aria-label="한 명 줄이기">−</button><span><b id="onBNum">10</b>명 · 빈자리는 컴퓨터</span><button type="button" id="onBPlus" aria-label="한 명 늘리기">+</button></div>
+        <div class="seg bMode" id="onBMode" role="group" aria-label="난투 방식" hidden><button type="button" data-m="0" aria-pressed="true">개인전</button><button type="button" data-m="1" aria-pressed="false">팀전 (반반)</button></div>
+        <div class="brawlN" id="onBNBox" hidden><button type="button" id="onBMinus" aria-label="줄이기">−</button><span><b id="onBNum">10</b><span id="onBUnit">명</span> · 빈자리는 컴퓨터</span><button type="button" id="onBPlus" aria-label="늘리기">+</button></div>
         <p class="onBig" id="onCodeTxt">·····</p>
         <p class="wdesc onLink" id="onLinkTxt"></p>
         <div class="row"><button type="button" id="onCopy">초대 링크 복사</button><button type="button" id="onStart" hidden>결투 시작<small>Space</small></button></div>
       </div>
       <div id="onMe" hidden>
+        <div class="seg" id="onTeam" role="group" aria-label="내 팀" hidden><button type="button" data-t="0" aria-pressed="false">청팀</button><button type="button" data-t="1" aria-pressed="false">홍팀</button></div>
         <p class="wdesc onNote" id="onWho">내 무기 (2P)</p>
         <div class="wsel" id="onW"></div>
         <div class="seg" id="onArena" role="group" aria-label="경기장" hidden><button type="button" data-a="0">낮</button><button type="button" data-a="1">밤</button><button type="button" data-a="2">비</button><button type="button" data-a="3">눈</button></div>
@@ -690,8 +702,9 @@ button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.6)}
   <section id="brawl" hidden aria-label="난투">
     <div class="kin">
       <h2 id="brawlHead">난투</h2>
-      <p class="wdesc brawlNote">모두가 모두와 싸운다. 마지막까지 서 있는 기사가 이긴다. 경기장이 훨씬 넓다.</p>
-      <div class="brawlN"><button type="button" id="brawlMinus" aria-label="한 명 줄이기">−</button><span><b id="brawlNum">10</b>명</span><button type="button" id="brawlPlus" aria-label="한 명 늘리기">+</button></div>
+      <div class="seg bMode" id="brawlMode" role="group" aria-label="방식"><button type="button" data-m="0" aria-pressed="true">개인전</button><button type="button" data-m="1" aria-pressed="false">팀전 (반반)</button></div>
+      <p class="wdesc brawlNote" id="brawlNote">모두가 모두와 싸운다. 마지막까지 서 있는 기사가 이긴다. 경기장이 훨씬 넓다.</p>
+      <div class="brawlN"><button type="button" id="brawlMinus" aria-label="줄이기">−</button><span><b id="brawlNum">10</b><span id="brawlUnit">명</span></span><button type="button" id="brawlPlus" aria-label="늘리기">+</button></div>
       <p id="brawlInfo" class="wdesc brawlNote"></p>
       <div class="row">
         <button type="button" id="brawlGo">난투 시작<small>Space</small></button>
@@ -1401,6 +1414,10 @@ const FLAG=['#3b5bb5','#b3242f'].map(c=>{const m=new MB(0.03);m.box(0,0.7,0,0.04
 const FIRE=[colCube('f0',hex('#ff7a1a')),colCube('f1',hex('#ffb02e')),colCube('f2',hex('#ffe27a')),colCube('f3',hex('#e2491c'))];
 const shadowMesh=(()=>{const mb=new MB(0);const n=12;for(let k=0;k<n;k++){const a0=k/n*TAU,a1=(k+1)/n*TAU;mb.tri([0,0,0],[Math.cos(a0),0,Math.sin(a0)],[Math.cos(a1),0,Math.sin(a1)],[0.1,0.08,0.14]);}return mb.mesh();})();
 const AURA_COLS=[colCube('au0',hex('#8fb4ff')),colCube('au1',hex('#ff8a5c'))];
+// the two sides of a team brawl (팀전): a chip colour, the cloth every knight on that side wears, and a ring on the ground under each
+const TEAMS=[{n:'청팀',c:'#4f7ff0',pal:{cloth:'#2c4a9a',clothD:'#1d3270',clothL:'#4466c0',trim:'#d8dcea',crs:'#e8ecf6'}},
+  {n:'홍팀',c:'#ea4d47',pal:{cloth:'#a8262e',clothD:'#6e1820',clothL:'#c84048',trim:'#efe2c8',crs:'#f2e6cc'}}];
+const TEAM_RING=TEAMS.map(s=>{const mb=new MB(0);mb.lathe([{y:0,rx:0.66},{y:0,rx:0.54}],28,hex(s.c));return mb.mesh();});
 const PART_COLS={spark:colCube('spark',hex('#ffd98a')),hot:colCube('hot',hex('#fff3c4')),red:colCube('red',hex('#b3242f')),steel:colCube('steel',hex('#c9c9d2')),dust:colCube('dust',hex('#cfa983'))};
 
 /* ================= game state ================= */
@@ -1428,8 +1445,9 @@ const FLURRY=[[0,0.04],[0.1,0.32],[-0.12,-0.2],[-0.12,0.3],[0.12,-0.18],[0,0.06]
 const THRUST_AIM={u:[0,0.36],d:[0.05,-0.34],l:[-0.125,0.04],r:[0.11,0.04],c:[0,0.04]};
 const K=[0,1].map(i=>({i,model:buildKnight(i),wins:0,rounds:0,weapon:0,el:null,in:[0,0],tw:[0,0],tm:[0,0],tbl:false,keys:{u:0,d:0,l:0,r:0},cpu:false,phone:null,mv:[0,0],VP:mI(),tap:{code:'',t:-9}}));
 let FFA=null; // the brawl (난투): up to ten knights in one arena, all against all
-const foeOf=k=>FFA?(k.foe&&k.foe!==k&&K.includes(k.foe)?k.foe:K.find(x=>x!==k)):K[1-k.i]; // the one a knight faces and fights
-const foesOf=k=>FFA?K.filter(x=>x!==k):[K[1-k.i]]; // everyone its blows can land on
+const isFoe=(a,b)=>a!==b&&!(FFA&&FFA.team&&a.team===b.team); // in a team brawl (팀전) only the other side
+const foeOf=k=>FFA?(k.foe&&isFoe(k,k.foe)&&K.includes(k.foe)?k.foe:K.find(x=>isFoe(k,x))||K.find(x=>x!==k)):K[1-k.i]; // the one a knight faces and fights
+const foesOf=k=>FFA?K.filter(x=>isFoe(k,x)):[K[1-k.i]]; // everyone its blows can land on
 let P0=K[0],P1=K[1],PP=[K[0],K[1]];const oth=k=>k===P0?P1:P0,slotOf=k=>k===P0?0:1; // the two knights whose weapons are being checked against each other
 let LOG=null;let practice=false;let paused=false;let state='title',stateT=0,freeze=0,slowT=0,slowS=1,clashCd=0,time=0,particles=[],debris=[],round=1,subN=0,koPhase=0,koWinner=null,koTime=0,clashD=9,clashSide=0,crossT=0,clashN=[0,0,0];let hype=0,crowdCd=0,quietT=0,poseDirty=false,xAll=-9;
 function resetKnight(k){
@@ -2206,7 +2224,7 @@ function step(h){
       for(let i=0;i<K.length;i++)for(let j=i+1;j<K.length;j++){const a=K[i],b=K[j];if(a.dead||b.dead)continue;const dx=b.x-a.x,dz=b.z-a.z,d=Math.hypot(dx,dz);
         if(d<0.75&&d>1e-4){const p=(0.75-d)/2,ux=dx/d,uz=dz/d;a.x-=ux*p;a.z-=uz*p;b.x+=ux*p;b.z+=uz*p;poseDirty=true;}}
       for(let i=0;i<K.length&&state==='fight';i++)for(let j=i+1;j<K.length&&state==='fight';j++){const a=K[i],b=K[j],s=pairIn(a,b);
-        if(a.dead||b.dead||Math.hypot(a.x-b.x,a.z-b.z)>4.6){s.side=0;s.d=9;continue;} // too far apart for their weapons to meet
+        if(a.dead||b.dead||!isFoe(a,b)||Math.hypot(a.x-b.x,a.z-b.z)>4.6){s.side=0;s.d=9;continue;} // teammates, or too far apart for their weapons to meet
         if(poseDirty){for(const k of K)computePose(k);poseDirty=false;}
         attack(a,b,h);if(state==='fight')attack(b,a,h);if(state==='fight')clashCheck(h);pairOut(s);}
       P0=K[0];P1=K[1];PP=[K[0],K[1]];}}
@@ -2521,9 +2539,9 @@ function render(){
   gl.disable(gl.SCISSOR_TEST);gl.viewport(0,0,canvas.width,canvas.height);gl.clearColor(THEME.clear[0],THEME.clear[1],THEME.clear[2],1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
   gl.enable(gl.SCISSOR_TEST);
   for(const vp of views){
-    const v=vp.k,k=K[v];gl.viewport(vp.x,vp.y,vp.w,vp.h);gl.scissor(vp.x,vp.y,vp.w,vp.h);
+    const v=vp.k,kv=K[v],k=specOf(kv);gl.viewport(vp.x,vp.y,vp.w,vp.h);gl.scissor(vp.x,vp.y,vp.w,vp.h);
     const dbg=window.__duel.cam||extCam,cam=dbg?dbg(v):k.cine?cineCam(k):camMatrix(k),asp=vp.w/vp.h,fov=dbg?0.8:k.cine?0.95:(asp<1?1.5:1.5-Math.min(0.35,(asp-1)*0.4))*(1-0.16*(k.zoom||0))+0.2*(k.fovB||0);
-    const VP=mMul(mPersp(fov,asp,0.07,600),mInvRigid(cam));k.VP=VP;
+    const VP=mMul(mPersp(fov,asp,0.07,600),mInvRigid(cam));kv.VP=VP;
     gl.uniformMatrix4fv(U.uVP,false,VP);gl.uniform3f(U.uCam,cam[12],cam[13],cam[14]);gl.uniform3f(U.uTint,0,0,0);gl.uniform1f(U.uAlpha,1);
     gl.disable(gl.DEPTH_TEST);gl.depthMask(false);gl.uniform1f(U.uEmis,1);if(flashL>0.02)gl.uniform3f(U.uTint,flashL*0.55,flashL*0.55,flashL*0.6);draw(sky,mT(cam[12],cam[13]*0.5,cam[14]));gl.uniform3f(U.uTint,0,0,0);
     gl.enable(gl.DEPTH_TEST);gl.depthMask(true);gl.uniform1f(U.uEmis,0);draw(arena,mI());drawCrowd(); // the stands jump, raise their arms and ride a wave when the crowd is excited
@@ -2534,6 +2552,7 @@ function render(){
     // blob shadows
     gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.depthMask(false);gl.uniform1f(U.uEmis,1);gl.uniform1f(U.uAlpha,0.38);
     for(const kk of K)draw(shadowMesh,mMulN(mT(kk.x+0.12,0.012,kk.z-0.1),mS(0.42,1,0.42)));
+    if(FFA&&FFA.team){gl.uniform1f(U.uAlpha,0.8);for(const kk of K)if(!kk.dead&&kk!==k&&kk.team!=null)draw(TEAM_RING[kk.team],mT(kk.x,0.016,kk.z));}
     drawClouds(cam);gl.uniform1f(U.uAlpha,0.38);
     // swing trails
     gl.blendFunc(gl.SRC_ALPHA,gl.ONE);
@@ -2688,7 +2707,7 @@ function frame(ts){
   pollPads();
   time+=dt;stateT+=dt;hype*=Math.exp(-0.9*dt);
   if(state==='intro'){
-    if(introStage===0&&stateT>0.1){if(K[0].rounds&&K[1].rounds){chantT=3.2;chantB=0;chantN=0;}banner(FFA?'난투 · '+K.length+'명':tut?'튜토리얼':practice?'연습':SURV?(SURV.kills+1)+'번째 도전자':(TOUR?(TOUR.i===TOUR_ORDER.length-1?'결승 · ':(TOUR.i+1)+'회전 · '):'')+(K[0].rounds&&K[1].rounds?'마지막 라운드':round+'라운드'));sfx.tick();introStage=1;}
+    if(introStage===0&&stateT>0.1){if(K[0].rounds&&K[1].rounds){chantT=3.2;chantB=0;chantN=0;}banner(FFA?(FFA.team?'팀전 · '+K.length/2+' 대 '+K.length/2:'난투 · '+K.length+'명'):tut?'튜토리얼':practice?'연습':SURV?(SURV.kills+1)+'번째 도전자':(TOUR?(TOUR.i===TOUR_ORDER.length-1?'결승 · ':(TOUR.i+1)+'회전 · '):'')+(K[0].rounds&&K[1].rounds?'마지막 라운드':round+'라운드'));sfx.tick();introStage=1;}
     if(introStage===1&&stateT>1.4&&!salWait()){for(const k of K)if(k.phone)k.phone.c.send({t:'c'});banner('시작!','go');sfx.bell();introStage=2;state='fight';stateT=0;}
   }
   if(state==='fight'&&introStage===2&&stateT>0.7){banner('');introStage=3;}
@@ -2745,7 +2764,7 @@ function frame(ts){
 }
 function startRound(){
   hist.length=0;replay=null;replayDone=false;extCam=null;stage.classList.remove('replay');
-  K.forEach(resetKnight);if(FFA){brawlPlace();FFA.order=[];K.forEach(k=>{k.kills=0;k.lock=null;});}K.forEach(k=>{if(k.weapon===4)k.ay=-0.08;}); /* a bow starts aimed level */particles=[];debris=[];clouds=[];waves=[];arrows=[];hype=0;crowdCd=0;quietT=0;state='intro';stateT=0;introStage=0;salAsked=false;fanfare('start');celebT=0;flagUp=0;grayT=0;rings.forEach(q=>q.el.forEach(e=>e&&e.remove()));rings=[];if(round===1)marks.length=0;freeze=0;slowT=0;acc=0;clashCd=0;koPhase=0;
+  K.forEach(resetKnight);if(FFA){brawlPlace();FFA.order=[];FFA.spec=null;K.forEach(k=>{k.kills=0;k.lock=null;});}K.forEach(k=>{if(k.weapon===4)k.ay=-0.08;}); /* a bow starts aimed level */particles=[];debris=[];clouds=[];waves=[];arrows=[];hype=0;crowdCd=0;quietT=0;state='intro';stateT=0;introStage=0;salAsked=false;fanfare('start');celebT=0;flagUp=0;grayT=0;rings.forEach(q=>q.el.forEach(e=>e&&e.remove()));rings=[];if(round===1)marks.length=0;freeze=0;slowT=0;acc=0;clashCd=0;koPhase=0;
   $('title').hidden=true;$('ko').hidden=true;banner('');VEL.forEach(e=>e.pops.textContent='');stage.classList.add('playing');
 }
 function startPractice(){if(NET.conn||NET.host)netLeave();if(FFA)endBrawl();tut=null;tutShow();practice=true;K[1].cpu=false;K[0].cpu=false;audioInit();round=1;K.forEach(k=>{k.rounds=0;});startRound();K[0].x=-0.78;K[1].x=0.78;K.forEach(k=>{const M=mMul(mT(k.x,0,k.z),mRY(k.yaw));k.feet=[mP(M,[0.18,0,0.12]),mP(M,[-0.18,0,-0.10])];});stage.classList.add('practice');}
@@ -2825,7 +2844,7 @@ function survNext(){const S=SURV,P=K[0],o=K[1];S.kills++;S.next=false;
   debris=[];arrows=[];waves=[];hist.length=0;replay=null;replayDone=false;extCam=null;stage.classList.remove('replay');koPhase=0;slowT=0;freeze=0;state='intro';stateT=0;introStage=0;salAsked=false;
   popMid(0,S.kills+'명 처치 · 체력 +20','big',0.5);crowdEv('cheer',1);}
 function survOver(){const S=SURV,best=Math.max(lsGet('axisSurv',0),S.kills);lsSet('axisSurv',best);koScreen('쓰러졌다',S.kills+'명 처치','최고 기록 '+best+'명','다시 도전','p2');}
-function goAgain(){if(FFA&&!FFA.online)startBrawl(FFA.n);else if(FFA&&FFA.online)netBrawlStart();else if(SURV)startSurvival();else if(TOUR)startTour();else startMatch();}
+function goAgain(){if(FFA&&!FFA.online)startBrawl(FFA.n,FFA.team);else if(FFA&&FFA.online)netBrawlStart();else if(SURV)startSurvival();else if(TOUR)startTour();else startMatch();}
 /* ================= the brawl (난투): up to ten knights at once, everyone against everyone, in a bigger arena ================= */
 const BRAWL=[ // name, colour chip, and the colours over the armour (the first two are the duel's own knights)
   {n:'청기사',c:'#4a64b4'},{n:'성전기사',c:'#b3242f'},
@@ -2838,52 +2857,69 @@ const BRAWL=[ // name, colour chip, and the colours over the armour (the first t
   {n:'흑기사',c:'#2a2830',k:0,pal:{S:'#3a383d',L:'#55525a',H:'#77737c',D:'#262429',X:'#18171a',cloth:'#1c1b20',clothD:'#111014',clothL:'#2c2a31',trim:'#c9a24f',crs:'#c9a24f',guard:'#c9a24f'}},
   {n:'분홍기사',c:'#d0548a',k:1,pal:{cloth:'#f0d0dc',clothD:'#a83a6a',clothL:'#f8e0ea',trim:'#c84a7a',crs:'#c84a7a'}}];
 const BRAWL_R=17,BK=[]; // the brawl's wall radius; its extra knights, built once and kept
+const BASEM=new Map(),TM={}; // each knight's own model; the team-coloured copies of each seat's knight
+function teamModel(i,s){const key=i*2+s;return TM[key]||(TM[key]=buildKnight(i===0?0:i===1?1:BRAWL[i].k,Object.assign({},BRAWL[i].pal||{},TEAMS[s].pal)));}
+function brawlPaint(){for(const k of K){if(!BASEM.has(k))BASEM.set(k,k.model);const want=FFA&&FFA.team&&k.team!=null?teamModel(k.i,k.team):BASEM.get(k);if(k.model!==want){k.model=want;netReg(k);}}}
+function brawlUnpaint(){for(const [k,m] of BASEM)if(k.model!==m){k.model=m;netReg(k);}}
+// a fallen knight in a team brawl watches through a living teammate's eyes (a person first, then the nearest)
+function specOf(k){if(!FFA||!FFA.team||!k||!k.dead||state==='title')return k;const s=FFA.spec;if(s&&s!==k&&!s.dead&&s.team===k.team&&K.includes(s))return s;
+  const L=K.filter(x=>x!==k&&!x.dead&&x.team===k.team);if(!L.length)return k;L.sort((a,b)=>((b.hu?1:0)-(a.hu?1:0))||(Math.hypot(a.x-k.x,a.z-k.z)-Math.hypot(b.x-k.x,b.z-k.z)));return FFA.spec=L[0];}
+const sideCol=k=>FFA&&FFA.team&&k.team!=null?TEAMS[k.team].c:BRAWL[k.i].c;
 const nameOf=k=>FFA?(k.nm||BRAWL[k.i].n):NAMES[k.i];
 const meIdx=()=>NET.guest?(FFA?NET.slot:1):0; // the knight this screen plays
 function brawlKnight(i){const b=BRAWL[i],k={i,model:buildKnight(b.k,b.pal),wins:0,rounds:0,weapon:0,el:null,in:[0,0],tw:[0,0],tm:[0,0],tbl:false,keys:{u:0,d:0,l:0,r:0},cpu:true,phone:null,mv:[0,0],VP:mI(),tap:{code:'',t:-9}};resetKnight(k);return k;}
-function brawlSet(n){for(let i=2;i<n;i++){if(!BK[i])BK[i]=brawlKnight(i);K[i]=BK[i];}K.length=n;}
+function brawlSet(n){for(let i=2;i<n;i++){if(!BK[i])BK[i]=brawlKnight(i);K[i]=BK[i];}K.length=n;K.forEach(netReg);}
 function placeKnight(k,x,z,yaw){k.x=x;k.z=z;k.yaw=yaw;const M=mMul(mT(x,0,z),mRY(yaw));k.feet=[mP(M,[0.18,0,0.12]),mP(M,[-0.18,0,-0.10])];k.fh=null;computePose(k);
   if(k.weapon===1){k.fh=add(k.pose.hand,mulS(k.pose.dir,FL_A+FL_L));k.fhp=k.fh.slice();computePose(k);}k.pbA=k.pose.bA;k.pbB=k.pose.bB;}
 // the screen shows this screen's own knight in one view, whichever knight that is
 function brawlViews(){const me=meIdx();K.forEach(k=>k.el=null);K[me].el=VEL[NET.guest?1:0];const v=K[me].el,tg=v.root.querySelector('.tag');if(tg)tg.textContent=nameOf(K[me]);v.root.querySelector('.ehp span').textContent='';}
 // each knight fights the nearest of the others, and turns on whoever just struck it; it only switches when another is clearly closer
 function brawlTargets(){for(const k of K){if(k.dead)continue;
-    if(k.lock){const e=k.lock;if(e===k||e.dead||!K.includes(e)||Math.hypot(e.x-k.x,e.z-k.z)>8)k.lock=null;else{k.foe=e;k.foeI=e.i;continue;}}
+    if(k.lock){const e=k.lock;if(!isFoe(k,e)||e.dead||!K.includes(e)||Math.hypot(e.x-k.x,e.z-k.z)>8)k.lock=null;else{k.foe=e;k.foeI=e.i;continue;}}
     const cur=k.foe&&k.foe!==k&&!k.foe.dead&&K.includes(k.foe)?k.foe:null;let best=null,bd=1e9;
-    for(const e of K){if(e===k||e.dead)continue;let d=Math.hypot(e.x-k.x,e.z-k.z);if(k.lastBy===e.i&&time-k.lastByT<2.5)d-=1.6;if(e===cur)d-=1.2;if(d<bd){bd=d;best=e;}}
-    if(best)k.foe=best;else if(!cur)k.foe=K.find(e=>e!==k);k.foeI=k.foe?k.foe.i:-1;}}
-function brawlNextTarget(k){if(!FFA||k.dead)return;const L=K.filter(e=>e!==k&&!e.dead).sort((a,b)=>Math.hypot(a.x-k.x,a.z-k.z)-Math.hypot(b.x-k.x,b.z-k.z)).slice(0,4);if(L.length<2)return;
+    for(const e of K){if(!isFoe(k,e)||e.dead)continue;let d=Math.hypot(e.x-k.x,e.z-k.z);if(k.lastBy===e.i&&time-k.lastByT<2.5)d-=1.6;if(e===cur)d-=1.2;if(d<bd){bd=d;best=e;}}
+    if(best)k.foe=best;else if(!cur)k.foe=K.find(e=>isFoe(k,e))||K.find(e=>e!==k);k.foeI=k.foe?k.foe.i:-1;}}
+function brawlNextTarget(k){if(!FFA||k.dead)return;const L=K.filter(e=>isFoe(k,e)&&!e.dead).sort((a,b)=>Math.hypot(a.x-k.x,a.z-k.z)-Math.hypot(b.x-k.x,b.z-k.z)).slice(0,4);if(L.length<2)return;
   const i=L.indexOf(k.foe);k.foe=L[(i+1)%L.length];k.foeI=k.foe.i;k.lock=k.foe;popMid(k.i,'목표: '+nameOf(k.foe),'act',0.8);}
-function startBrawl(n){if(NET.conn||NET.host)netLeave();brawlBegin(n,false);}
+function startBrawl(n,team){if(NET.conn||NET.host)netLeave();brawlBegin(n,false,team);}
 // n knights: this screen's own knight first, the rest computers unless they are other players (online)
-function brawlBegin(n,online){if(TOUR||SURV||base)clearModes();if(paused)setPause(false);tut=null;tutShow();practice=false;stage.classList.remove('practice');audioInit();
-  n=clamp(n|0,2,10);if(!FFA)FFA={w1:K[1].weapon,cpu1:K[1].cpu};FFA.n=n;FFA.online=!!online;FFA.order=[];FFA.feed=[];PAIRS.clear();
+function brawlBegin(n,online,team){if(TOUR||SURV||base)clearModes();if(paused)setPause(false);tut=null;tutShow();practice=false;stage.classList.remove('practice');audioInit();
+  n=clamp(n|0,2,10);if(team)n=clamp(n+(n&1),4,10);if(!FFA)FFA={w1:K[1].weapon,cpu1:K[1].cpu};FFA.n=n;FFA.online=!!online;FFA.team=!!team;FFA.spec=null;FFA.order=[];FFA.feed=[];PAIRS.clear();
   brawlSet(n);setArenaSize(BRAWL_R);
-  K.forEach((k,i)=>{k.mem=null;k.rounds=0;k.kills=0;k.aiMod=null;if(!online){k.net=false;k.cpu=i>0;k.hu=i===0;k.nm=null;if(i>0)k.weapon=Math.floor(rnd()*WEAPONS.length);}});
-  $('brawl').hidden=true;$('brawlBoard').hidden=false;brawlViews();round=1;startRound();}
-function endBrawl(){if(!FFA)return;const F=FFA;FFA=null;K.length=2;K[0].el=VEL[0];K[1].el=VEL[1];K.forEach(k=>{k.nm=null;k.foe=null;k.lock=null;k.net=false;});K[0].cpu=false;K[1].cpu=F.cpu1;setWeapon(1,F.w1);
+  K.forEach((k,i)=>{k.mem=null;k.rounds=0;k.kills=0;k.aiMod=null;if(!online){k.net=false;k.cpu=i>0;k.hu=i===0;k.nm=null;if(i>0)k.weapon=Math.floor(rnd()*WEAPONS.length);k.team=team?(i<n/2?0:1):null;}else if(!team)k.team=null;});
+  brawlPaint();$('brawl').hidden=true;$('brawlBoard').hidden=false;brawlViews();round=1;startRound();}
+function endBrawl(){if(!FFA)return;const F=FFA;FFA=null;K.length=2;brawlUnpaint();K.forEach(k=>{k.team=null;});K[0].el=VEL[0];K[1].el=VEL[1];K.forEach(k=>{k.nm=null;k.foe=null;k.lock=null;k.net=false;});K[0].cpu=false;K[1].cpu=F.cpu1;setWeapon(1,F.w1);
   PAIRS.clear();P0=K[0];P1=K[1];PP=[K[0],K[1]];setArenaSize(10);$('brawlBoard').hidden=true;$('brawlFeed').textContent='';
   VEL[0].root.querySelector('.tag').textContent=NAMES[0];VEL[1].root.querySelector('.tag').textContent=NAMES[1];VEL[0].ehp.querySelector('span').textContent=NAMES[1];VEL[1].ehp.querySelector('span').textContent=NAMES[0];
   $('again').firstChild.textContent='다시 결투';}
 // spread round a circle, all facing the middle
-function brawlPlace(){const n=K.length,r=Math.min(arenaIn()*0.62,1.6+n*0.62),a0=rnd()*TAU;K.forEach((k,i)=>{const a=a0+i/n*TAU,x=Math.cos(a)*r,z=Math.sin(a)*r;placeKnight(k,x,z,Math.atan2(x,z));k.foe=null;});brawlTargets();}
-function brawlFeed(A,D){const f=$('brawlFeed'),e=document.createElement('div');e.innerHTML='<b style="color:'+BRAWL[A.i].c+'"></b> ⚔ <s style="color:'+BRAWL[D.i].c+'"></s>';e.querySelector('b').textContent=nameOf(A);e.querySelector('s').textContent=nameOf(D);
+function brawlPlace(){const n=K.length,r=Math.min(arenaIn()*0.62,1.6+n*0.62),a0=rnd()*TAU;
+  if(FFA&&FFA.team)for(const s of[0,1]){const L=K.filter(k=>k.team===s),m=L.length;L.forEach((k,j)=>{const a=a0+s*PI+(j-(m-1)/2)*0.36,x=Math.cos(a)*r,z=Math.sin(a)*r;placeKnight(k,x,z,Math.atan2(x,z));k.foe=null;});}
+  else K.forEach((k,i)=>{const a=a0+i/n*TAU,x=Math.cos(a)*r,z=Math.sin(a)*r;placeKnight(k,x,z,Math.atan2(x,z));k.foe=null;});brawlTargets();}
+function brawlFeed(A,D){const f=$('brawlFeed'),e=document.createElement('div');e.innerHTML='<b style="color:'+sideCol(A)+'"></b> ⚔ <s style="color:'+sideCol(D)+'"></s>';e.querySelector('b').textContent=nameOf(A);e.querySelector('s').textContent=nameOf(D);
   f.appendChild(e);while(f.children.length>4)f.firstChild.remove();setTimeout(()=>e.remove(),5000);}
 let boardT=0;
 function brawlBoard(){const on=!!FFA&&!!K[meIdx()]&&!K[meIdx()].dead;if(stage.classList.contains('ffaOn')!==on)stage.classList.toggle('ffaOn',on);
   if(!FFA||performance.now()-boardT<200)return;boardT=performance.now();const b=$('brawlBoard'),alive=K.filter(k=>!k.dead).length,me=K[meIdx()];
-  {const tg=me&&me.el&&me.el.root.querySelector('.tag'),nv=me?nameOf(me):'';if(tg&&tg.textContent!==nv)tg.textContent=nv;}
-  let h='<p>남은 기사 '+alive+' / '+K.length+'</p>';
-  for(const k of K.slice().sort((a,c)=>(a.dead-c.dead)||((c.kills||0)-(a.kills||0)))){h+='<div class="'+(k.dead?'dead':'')+(k===me?' me':'')+'"><i style="background:'+BRAWL[k.i].c+'"></i><span></span><em>'+(k.kills||0)+'</em></div>';}
-  b.innerHTML=h;const ss=b.querySelectorAll('div span');let j=0;for(const k of K.slice().sort((a,c)=>(a.dead-c.dead)||((c.kills||0)-(a.kills||0))))ss[j++].textContent=nameOf(k)+((FFA.online?k.hu:!k.cpu)?' ★':'');}
+  {const tg=me&&me.el&&me.el.root.querySelector('.tag'),sp=me?specOf(me):null,nv=!me?'':sp!==me?'관전: '+nameOf(sp):nameOf(me);if(tg&&tg.textContent!==nv)tg.textContent=nv;}
+  const rows=K.slice();let h;
+  if(FFA.team){const al=s=>K.filter(k=>k.team===s&&!k.dead).length,mt=me?me.team:0;h='<p><span style="color:'+TEAMS[0].c+'">'+TEAMS[0].n+' '+al(0)+'</span> · <span style="color:'+TEAMS[1].c+'">'+TEAMS[1].n+' '+al(1)+'</span></p>';
+    rows.sort((a,c)=>((a.team!==mt)-(c.team!==mt))||(a.dead-c.dead)||((c.kills||0)-(a.kills||0)));}
+  else{h='<p>남은 기사 '+alive+' / '+K.length+'</p>';rows.sort((a,c)=>(a.dead-c.dead)||((c.kills||0)-(a.kills||0)));}
+  for(const k of rows)h+='<div class="'+(k.dead?'dead':'')+(k===me?' me':'')+'"><i style="background:'+sideCol(k)+'"></i><span></span><em>'+(k.kills||0)+'</em></div>';
+  b.innerHTML=h;const ss=b.querySelectorAll(':scope>div>span');let j=0;for(const k of rows)ss[j++].textContent=nameOf(k)+((FFA.online?k.hu:!k.cpu)?' ★':'');}
 // the brawl's knockout: the fallen stay down and the fight goes on until one knight is left standing
 function brawlKO(A,D){if(D.dead)return;D.dead=true;D.hp=0;A.kills=(A.kills||0)+1;FFA.order.push(D.i);buzz(D,[300,80,400],'ko');buzz(A,[80,60,80],'win');knock(A,D,1.5);dust(D,12);sfx.bell();crowdEv('cheer',0.8);
   brawlFeed(A,D);if(A!==D)popMid(A.i,nameOf(D)+' 처치!','big',0.66);popMid(D.i,nameOf(A)+'에게 쓰러졌다 · 관전 중','warn',0.4);boardT=0;
   const alive=K.filter(k=>!k.dead);if(LOG)LOG.push(['ko',A.i,D.i]);
-  if(alive.length<=1){const W=alive[0]||A;koTime=time;replayDone=true;W.rounds++;W.wins++;startWave();state='ko';stateT=0;koPhase=0;koWinner=W;slowT=1.5;slowS=0.3;crowdEv('roar',1);sfx.fin();banner(nameOf(W)+' · 최후의 1인!','rep');}}
-function brawlResult(){const W=koWinner,me=K[meIdx()],order=[W.i,...FFA.order.slice().reverse().filter(i=>i!==W.i)],rank=order.indexOf(me.i)+1;
+  if(FFA.team?new Set(alive.map(k=>k.team)).size<=1:alive.length<=1){const W=FFA.team&&alive.includes(A)?A:alive[0]||A;koTime=time;replayDone=true;W.rounds++;W.wins++;startWave();state='ko';stateT=0;koPhase=0;koWinner=W;slowT=1.5;slowS=0.3;crowdEv('roar',1);sfx.fin();
+    banner(FFA.team?TEAMS[W.team].n+' 승리!':nameOf(W)+' · 최후의 1인!','rep');}}
+function brawlResult(){if(FFA.team){brawlTeamResult();return;}const W=koWinner,me=K[meIdx()],order=[W.i,...FFA.order.slice().reverse().filter(i=>i!==W.i)],rank=order.indexOf(me.i)+1;
   const top=order.slice(0,3).map((i,j)=>(j+1)+'위 '+nameOf(K[i])+' ('+(K[i].kills||0)+'처치)').join(' · ');
   koScreen(W===me?'최후의 1인!':nameOf(W)+' 승리','내 순위 '+rank+'위 / '+K.length+'명 · 처치 '+(me.kills||0),top,FFA.online&&NET.guest?'다시 난투':'다시 난투',W===me?'p1':'p2');
+  if(FFA.online&&NET.guest)$('again').hidden=true;}
+function brawlTeamResult(){const W=koWinner,me=K[meIdx()],s=W.team,kl=x=>K.filter(k=>k.team===x).reduce((a,k)=>a+(k.kills||0),0),best=K.slice().sort((a,b)=>(b.kills||0)-(a.kills||0))[0];
+  koScreen(TEAMS[s].n+' 승리!',(me.team===s?'우리 팀 승리':'우리 팀 패배')+' · 내 처치 '+(me.kills||0),TEAMS[0].n+' 처치 '+kl(0)+' · '+TEAMS[1].n+' 처치 '+kl(1)+' · 최다 처치 '+nameOf(best)+' ('+(best.kills||0)+')','다시 팀전',s===0?'p1':'p2');
   if(FFA.online&&NET.guest)$('again').hidden=true;}
 function startMatch(){if(TOUR||SURV||base||FFA)clearModes();K.forEach(k=>k.mem=null);tut=null;tutShow();practice=false;stage.classList.remove('practice');K[1].cpu=$('mC').getAttribute('aria-pressed')==='true';K[0].cpu=false;
   // a screen with no keyboard and only one phone connected: the computer plays the other knight
@@ -2966,17 +3002,26 @@ $('helpBtn').addEventListener('click',()=>{$('help').hidden=false;$('helpClose')
 $('notesBtn').addEventListener('click',()=>{$('notes').hidden=false;$('notesClose').focus();});$('notesClose').addEventListener('click',()=>{$('notes').hidden=true;$('notesBtn').focus();});
 $('recBtn').addEventListener('click',recShow);$('recClose').addEventListener('click',()=>{$('rec').hidden=true;$('recBtn').focus();});$('recClear').addEventListener('click',()=>{REC=[];recSave();recShow();});
 addEventListener('keydown',e=>{if(e.code==='Escape'&&!$('help').hidden){$('help').hidden=true;}if(e.code==='Escape'&&!$('notes').hidden){$('notes').hidden=true;}if(e.code==='Escape'&&!$('rec').hidden){$('rec').hidden=true;}});
-{let bn=10;try{bn=clamp(+localStorage.getItem('axisBrawlN')||10,2,10);}catch(_){}
-  const show=()=>{$('brawlNum').textContent=bn;$('brawlInfo').textContent='나 + 컴퓨터 '+(bn-1)+'명 · 난이도 '+LVN[aiLv]+' · 내 무기 '+WEAPONS[K[0].weapon].name+' · 컴퓨터 무기는 제각각';},set=v=>{bn=clamp(v,2,10);try{localStorage.setItem('axisBrawlN',String(bn));}catch(_){}show();};
+{let bn=10,bt=0;try{bn=clamp(+localStorage.getItem('axisBrawlN')||10,2,10);bt=localStorage.getItem('axisBrawlT')==='1'?1:0;}catch(_){}
+  const show=()=>{if(bt)bn=clamp(bn+(bn&1),4,10);const h=bn/2;$('brawlNum').textContent=bt?h+' 대 '+h:bn;$('brawlUnit').hidden=!!bt;
+      document.querySelectorAll('#brawlMode button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.m===bt)));
+      $('brawlGo').firstChild.textContent=bt?'팀전 시작':'난투 시작';$('brawlNote').textContent=bt?'반반 두 팀으로 나눠 싸운다. 상대 팀을 모두 쓰러뜨리면 이긴다. 같은 편끼리는 다치지 않고, 발밑 고리와 옷 색으로 편을 알 수 있다.':'모두가 모두와 싸운다. 마지막까지 서 있는 기사가 이긴다. 경기장이 훨씬 넓다.';
+      $('brawlInfo').textContent=(bt?TEAMS[0].n+': 나 + 컴퓨터 '+(h-1)+'명 · '+TEAMS[1].n+': 컴퓨터 '+h+'명':'나 + 컴퓨터 '+(bn-1)+'명')+' · 난이도 '+LVN[aiLv]+' · 내 무기 '+WEAPONS[K[0].weapon].name+' · 컴퓨터 무기는 제각각';},
+    set=v=>{bn=clamp(v,bt?4:2,10);try{localStorage.setItem('axisBrawlN',String(bn));}catch(_){}show();};
+  document.querySelectorAll('#brawlMode button').forEach(b=>b.addEventListener('click',()=>{bt=+b.dataset.m;try{localStorage.setItem('axisBrawlT',String(bt));}catch(_){}set(bn);}));
   $('brawlBtn').addEventListener('click',()=>{show();$('brawl').hidden=false;$('brawlGo').focus();});$('brawlClose').addEventListener('click',()=>{$('brawl').hidden=true;});
-  $('brawlMinus').addEventListener('click',()=>set(bn-1));$('brawlPlus').addEventListener('click',()=>set(bn+1));$('brawlGo').addEventListener('click',()=>startBrawl(bn));}
+  $('brawlMinus').addEventListener('click',()=>set(bn-(bt?2:1)));$('brawlPlus').addEventListener('click',()=>set(bn+(bt?2:1)));$('brawlGo').addEventListener('click',()=>startBrawl(bn,!!bt));}
 $('start').addEventListener('click',startMatch);$('tutorial').addEventListener('click',startTutorial);$('tutSkip').addEventListener('click',tutNext);$('practice').addEventListener('click',startPractice);$('again').addEventListener('click',goAgain);$('tourBtn').addEventListener('click',()=>startTour());$('survBtn').addEventListener('click',startSurvival);$('tourGo').addEventListener('click',tourGo);$('tourQuit').addEventListener('click',toTitle);
 $('onlineBtn').addEventListener('click',netOpenPanel);$('onHost').addEventListener('click',netHostRoom);$('onJoin').addEventListener('click',()=>netJoinRoom($('onCode').value));
 $('onCode').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();netJoinRoom($('onCode').value);}e.stopPropagation();});
 $('onCopy').addEventListener('click',()=>{const u=$('onLinkTxt').textContent;try{navigator.clipboard.writeText(u).then(()=>netSay('초대 링크를 복사했어요.'),()=>netSay('복사하지 못했어요. 링크를 직접 알려 주세요.'));}catch(_){netSay('복사하지 못했어요. 링크를 직접 알려 주세요.');}});
 $('onStart').addEventListener('click',()=>{if(!NET.host||state!=='title')return;if(NET.room==='brawl')netBrawlStart();else if(NET.conn)startMatch();});
 document.querySelectorAll('#onType button').forEach(b=>b.addEventListener('click',()=>{if(!NET.host||netOn())return;NET.room=b.dataset.t;netLobbyUi();}));
-$('onBMinus').addEventListener('click',()=>{NET.bN=clamp(NET.bN-1,Math.max(2,1+NET.peers.length),10);NET.full=1;netLobbyUi();});$('onBPlus').addEventListener('click',()=>{NET.bN=clamp(NET.bN+1,2,10);NET.full=1;netLobbyUi();});
+$('onBMinus').addEventListener('click',()=>{const lo=NET.bTeam?Math.max(4,2*Math.max(sideCount(0),sideCount(1))):Math.max(2,1+NET.peers.length);NET.bN=clamp(Math.min(NET.bN,brawlRoomN())-(NET.bTeam?2:1),lo,10);NET.full=1;netLobbyUi();});
+$('onBPlus').addEventListener('click',()=>{NET.bN=clamp(Math.max(NET.bN,brawlRoomN())+(NET.bTeam?2:1),2,10);if(NET.bTeam)NET.bN-=NET.bN&1;NET.full=1;netLobbyUi();});
+document.querySelectorAll('#onBMode button').forEach(b=>b.addEventListener('click',()=>{if(!NET.host||state!=='title')return;NET.bTeam=b.dataset.m==='1';if(NET.bTeam)NET.bN=clamp(NET.bN+(NET.bN&1),4,10);NET.full=1;netLobbyUi();}));
+document.querySelectorAll('#onTeam button').forEach(b=>b.addEventListener('click',()=>{const v=+b.dataset.t;
+  if(NET.host){if(state==='title'&&NET.myTeam!==v&&sideCount(v)<5){NET.myTeam=v;NET.full=1;netLobbyUi();}}else if(NET.guest&&NET.conn)try{NET.conn.send({t:'tm',v});}catch(_){}}));
 $('onName').addEventListener('input',()=>{const v=$('onName').value.trim().slice(0,10);try{localStorage.setItem('axisName',v);}catch(_){}if(NET.guest&&NET.conn)try{NET.conn.send({t:'nm',nm:v});}catch(_){}NET.full=1;netLobbyUi();});
 $('onClose').addEventListener('click',()=>{if(NET.host||NET.guest)netLeave();else{$('online').hidden=true;NET.panel=false;}});$('onResume').addEventListener('click',netGuestPanel);
 WEAPONS.forEach((w,i)=>{const b=document.createElement('button');b.type='button';b.dataset.w=i;b.textContent=['장검','철퇴','창','해머','활','방패','도끼'][i]||w.name;b.setAttribute('aria-pressed','false');
@@ -3023,12 +3068,14 @@ window.__duel={K,probe,WEAPONS,REST,set log(v){LOG=v;},get log(){return LOG;},st
 // and draws what it is sent. A phone used as the guest's weapon connects straight to the host (the room code is the host's phone code).
 const NET={host:false,guest:false,conn:null,code:'',last:[{},{}],full:1,fullT:0,sentT:0,evq:[],depth:0,mute:0,ids:new Map(),byId:{},
   qsN:0,thN:0,spN:0,paN:0,qsD:null,thD:null,inT:0,lastIn:0,lastSt:0,ph:0,rpCam:null,dmap:new Map(),dN:0,dArr:null,dReset:0,aArr:null,aSig:[],aReset:0,
-  pArr:null,pReset:0,cArr:null,cReset:0,mLen:0,gArr:null,gReset:0,gst:'title',panel:false,koSig:'',fn:null,hostPaused:false,id:'',room:'duel',peers:[],slot:1,bN:10,lobby:null,pha:null};
+  pArr:null,pReset:0,cArr:null,cReset:0,mLen:0,gArr:null,gReset:0,gst:'title',panel:false,koSig:'',fn:null,hostPaused:false,id:'',room:'duel',peers:[],slot:1,bN:10,bTeam:false,myTeam:0,lobby:null,pha:null};
 const r4=v=>Math.round(v*1e4)/1e4,rep4=(k,x)=>typeof x==='number'?(isFinite(x)?Math.round(x*1e4)/1e4:x>0?1e9:-1e9):x;
 // every mesh the two sides share gets the same name on both, so a flung gauntlet or a thrown flower can be named over the wire
-function netMeshes(){if(NET.ids.size)return;const reg=(m,key)=>{if(!m||typeof m!=='object')return;if(m.b&&typeof m.n==='number'){if(!NET.ids.has(m)){NET.ids.set(m,key);NET.byId[key]=m;}return;}
-    if(Array.isArray(m))m.forEach((x,i)=>reg(x,key+'.'+i));else for(const q in m)reg(m[q],key+'.'+q);};
-  K.forEach(k=>reg(k.model,'k'+k.i));reg(cubeCols,'c');reg({ARROW_M,STRING_M,CELEB,FLAG,THROWN},'g');}
+function netMeshes(){if(NET.ids.size)return;K.forEach(k=>netRegM(k.model,'k'+k.i));netRegM(cubeCols,'c');netRegM({ARROW_M,STRING_M,CELEB,FLAG,THROWN},'g');}
+// a mesh is known to the other screen by where it sits (k3.torso: knight 3's torso); f: from now on that name means this mesh
+function netRegM(m,key,f){if(!m||typeof m!=='object')return;if(m.b&&typeof m.n==='number'){if(!NET.ids.has(m)){NET.ids.set(m,key);if(!NET.byId[key])NET.byId[key]=m;}if(f)NET.byId[key]=m;return;}
+  if(Array.isArray(m))m.forEach((x,i)=>netRegM(x,key+'.'+i,f));else for(const q in m)netRegM(m[q],key+'.'+q,f);}
+function netReg(k){if(NET.ids.size&&k&&k.model)netRegM(k.model,'k'+k.i,true);} // a knight's model is new or changed (a brawl's knights, team colours)
 const meshId=m=>NET.ids.get(m)||null,meshBy=id=>id==null?null:NET.byId[id]||null;
 // sounds and on-screen messages raised by the fight are recorded on the host and replayed on the guest
 function netArg(a){if(a&&typeof a==='object'){if(K.includes(a))return{__k:a.i};if(Array.isArray(a))return a.map(x=>typeof x==='number'?r4(x):netArg(x));
@@ -3060,7 +3107,7 @@ function knDelta(k,i,full){const L=NET.last[i]||(NET.last[i]={}),d={};
 function netState(full){const now=performance.now(),g={st:state,sT:r4(stateT),rd:round,iS:introStage,kP:koPhase,kw:koWinner?koWinner.i:-1,hy:r4(hype),gT:r4(grayT),qT:r4(quietT),
     cT:r4(celebT),cW:celebW,fU:r4(flagUp),cwA:r4(crowdWaveA),cwP:r4(crowdWaveP),stT:r4(stompT),tm:r4(time),pz:paused?1:0,ar:arenaI,
     ph:K[1].phone&&now-K[1].phone.seen<6000?(now-K[1].phone.last<3000?2:1):0,w0:K[0].weapon,w1:K[1].weapon,
-    ff:FFA?{n:K.length,o:FFA.order,h:K.map(k=>k.hu?1:0)}:null,lb:NET.room==='brawl'&&state==='title'?netSeats():null,
+    ff:FFA?{n:K.length,o:FFA.order,h:K.map(k=>k.hu?1:0),tm:FFA.team?1:0,t:FFA.team?K.map(k=>k.team):null}:null,lb:NET.room==='brawl'&&state==='title'?netSeats():null,
     pha:NET.room==='brawl'?[...Array(10)].map((_,i)=>{const kk=KP(i),q=kk&&kk.phone;return q&&now-q.seen<6000?(now-q.last<3000?2:1):0;}):null,
     ko:$('ko').hidden?null:[$('koName').textContent,$('koScore').textContent,$('koRec').textContent,$('ko').className]};
   const m={t:'st',g,k:K.map((k,i)=>knDelta(k,i,full))};
@@ -3112,10 +3159,12 @@ function netHostMsg(d){if(!d)return;const k=K[1];NET.lastIn=performance.now();
 const netOn=()=>NET.host?(NET.room==='brawl'?NET.peers.length>0:!!NET.conn):!!NET.conn;
 const myName=()=>{let n='';try{n=localStorage.getItem('axisName')||'';}catch(_){}return n.trim().slice(0,10);};
 const KP=i=>i<2?K[i]:(BK[i]||(BK[i]=brawlKnight(i))); // a seat's knight, made before the brawl starts (a phone can pair to it in the room)
-const netSeats=()=>({n:NET.bN,pl:[{s:0,nm:myName(),w:K[0].weapon},...NET.peers.map(P=>({s:P.slot,nm:P.nm,w:P.w}))]});
+const sideCount=s=>(NET.myTeam===s?1:0)+NET.peers.filter(P=>P.team===s).length; // people on a side (at most five)
+function brawlRoomN(){let n=Math.max(NET.bN,1+Math.max(0,...NET.peers.map(P=>P.slot)));if(NET.bTeam){n=Math.max(n,4,2*Math.max(sideCount(0),sideCount(1)));n+=n&1;}return clamp(n,2,10);}
+const netSeats=()=>({n:brawlRoomN(),tm:NET.bTeam?1:0,pl:[{s:0,nm:myName(),w:K[0].weapon,t:NET.myTeam},...NET.peers.map(P=>({s:P.slot,nm:P.nm,w:P.w,t:P.team}))]});
 function brawlPeerJoin(c){if(NET.peers.length>=9||state!=='title'){try{c.send({t:'full',why:state!=='title'?'busy':'full'});}catch(_){}return;}
   const used=new Set(NET.peers.map(P=>P.slot));let s=1;while(used.has(s))s++;
-  const P={c,slot:s,nm:'',w:0,lastIn:performance.now(),qsN:0,thN:0,spN:0,paN:0};NET.peers.push(P);NET.full=1;netMeshes();
+  const a=sideCount(0),b=sideCount(1),P={c,slot:s,nm:'',w:0,team:a<b?0:b<a?1:1-NET.myTeam,lastIn:performance.now(),qsN:0,thN:0,spN:0,paN:0};if(sideCount(P.team)>=5)P.team=1-P.team;NET.peers.push(P);NET.full=1;netMeshes();
   c.on=d=>brawlPeerMsg(P,d);c.onclose=()=>brawlPeerGone(P);
   try{c.send({t:'slot',i:s,room:'brawl'});}catch(_){}netLobbyUi();sfx.tick&&sfx.tick();}
 function brawlPeerMsg(P,d){if(!d)return;P.lastIn=performance.now();const k=FFA&&K[P.slot]&&K[P.slot].net?K[P.slot]:null;
@@ -3123,6 +3172,7 @@ function brawlPeerMsg(P,d){if(!d)return;P.lastIn=performance.now();const k=FFA&&
   else if(d.t==='hi'||d.t==='nm'){P.nm=String(d.nm||'').trim().slice(0,10);if(d.w!=null&&state==='title')P.w=clamp(d.w|0,0,WEAPONS.length-1);netLobbyUi();}
   else if(d.t==='gw'){if(state==='title'){P.w=clamp(d.w|0,0,WEAPONS.length-1);netLobbyUi();}}
   else if(d.t==='tg'){if(k)brawlNextTarget(k);}
+  else if(d.t==='tm'){const v=d.v?1:0;if(state==='title'&&P.team!==v&&sideCount(v)<5){P.team=v;NET.full=1;netLobbyUi();}}
   else if(d.t==='bye')brawlPeerGone(P);}
 // a guest who leaves: in the room the seat is freed; in a fight the computer takes over the knight
 function brawlPeerGone(P){const i=NET.peers.indexOf(P);if(i<0)return;NET.peers.splice(i,1);try{P.c.close&&P.c.close();}catch(_){}
@@ -3130,12 +3180,14 @@ function brawlPeerGone(P){const i=NET.peers.indexOf(P);if(i<0)return;NET.peers.s
   netLobbyUi();}
 // the host starts the brawl: its own knight, the guests in their seats, computers in the rest
 function netBrawlStart(){if(!NET.host||NET.room!=='brawl'||!NET.peers.length)return;
-  const n=clamp(Math.max(NET.bN,1+Math.max(0,...NET.peers.map(P=>P.slot))),2,10);brawlSet(n);
+  const n=brawlRoomN(),team=NET.bTeam;brawlSet(n);
   K.forEach((k,i)=>{k.net=false;k.cpu=i>0;k.hu=i===0;k.nm=i===0?myName()||null:null;if(i>0)k.weapon=Math.floor(rnd()*WEAPONS.length);});
   for(const P of NET.peers){const k=K[P.slot];k.net=true;k.cpu=false;k.hu=true;k.nm=P.nm||null;k.weapon=P.w;k.keys={u:0,d:0,l:0,r:0};k.tw=[0,0];k.tm=[0,0];k.pad=null;}
-  $('online').hidden=true;NET.panel=false;NET.full=1;brawlBegin(n,true);}
+  if(team){const sd=[];sd[0]=NET.myTeam;for(const P of NET.peers)sd[P.slot]=P.team;const c=[0,0];sd.forEach(s=>{if(s!=null)c[s]++;});
+    for(let i=0;i<n;i++)if(sd[i]==null){const s=c[0]<n/2?0:1;sd[i]=s;c[s]++;}K.forEach((k,i)=>{k.team=sd[i];});}
+  $('online').hidden=true;NET.panel=false;NET.full=1;brawlBegin(n,true,team);}
 // the guest's side of a brawl: as many knights as the host has, its own seat in view
-function guestBrawl(n){if(!FFA)FFA={w1:K[1].weapon,cpu1:false};FFA.n=n;FFA.online=true;FFA.order=[];FFA.feed=[];brawlSet(n);setArenaSize(BRAWL_R);K[NET.slot].cpu=false;brawlViews();$('brawlBoard').hidden=false;}
+function guestBrawl(n){if(!FFA)FFA={w1:K[1].weapon,cpu1:false};FFA.n=n;FFA.online=true;FFA.team=false;FFA.tsig='';FFA.spec=null;FFA.order=[];FFA.feed=[];brawlSet(n);setArenaSize(BRAWL_R);K[NET.slot].cpu=false;brawlViews();$('brawlBoard').hidden=false;}
 function netJoinRoom(code){code=String(code||'').trim().toUpperCase().replace(/[^A-Z0-9]/g,'');if(code.length!==5){netSay('방 코드 다섯 글자를 넣어 주세요.');return;}
   if(NET.conn)return;NET.guest=true;NET.code=code;netMeshes();netSay('방 '+code+'에 연결하는 중…');audioInit();
   try{NET.id=sessionStorage.getItem('kdNet')||Math.random().toString(36).slice(2,10);sessionStorage.setItem('kdNet',NET.id);}catch(_){NET.id=Math.random().toString(36).slice(2,10);}
@@ -3148,7 +3200,8 @@ function netApply(m){const g=m.g;
     crowdWaveA=g.cwA;crowdWaveP=g.cwP;stompT=g.stT;time=g.tm;NET.hostPaused=!!g.pz;NET.ph=g.ph;if(NET.gst==='title'&&g.st!=='title'){NET.panel=false;$('online').hidden=true;}NET.gst=g.st;if(g.ar!==arenaI)setArena(g.ar);
     if(!g.ff&&NET.room!=='brawl'){if(K[0].weapon!==g.w0)setWeapon(0,g.w0);if(K[1].weapon!==g.w1)setWeapon(1,g.w1);}
     if(g.ff&&(!FFA||K.length!==g.ff.n))guestBrawl(g.ff.n);else if(!g.ff&&FFA)endBrawl();
-    if(FFA&&g.ff){FFA.order=g.ff.o||[];g.ff.h.forEach((h,i)=>{if(K[i])K[i].hu=!!h;});}
+    if(FFA&&g.ff){FFA.order=g.ff.o||[];g.ff.h.forEach((h,i)=>{if(K[i])K[i].hu=!!h;});
+      const sig=(g.ff.tm?1:0)+':'+(g.ff.t?g.ff.t.join(''):'');if(sig!==FFA.tsig){FFA.tsig=sig;FFA.team=!!g.ff.tm;K.forEach((k,i)=>{k.team=g.ff.tm&&g.ff.t?g.ff.t[i]:null;});FFA.spec=null;brawlPaint();}}
     NET.lobby=g.lb||null;NET.pha=g.pha||null;}
   if(m.k)m.k.forEach((d,i)=>{const k=K[i];if(!k)return;for(const q in d)k[q]=d[q];});
   if(FFA)for(const k of K)k.foe=k.foeI!=null&&k.foeI>=0&&K[k.foeI]?K[k.foeI]:null;
@@ -3194,24 +3247,30 @@ function netSay(t){NET.msg=t;const e=$('onStatus');if(e)e.textContent=t;}
 function netLobbyUi(){const on=$('online');if(!on)return;const hostRoom=NET.host,guest=NET.guest&&!!NET.conn,brawl=NET.room==='brawl',lobby=hostRoom?state==='title':NET.gst==='title';
   $('onPick').hidden=hostRoom||NET.guest;$('onRoom').hidden=!hostRoom;$('onMe').hidden=!guest&&!(hostRoom&&pairCode);$('onArena').hidden=!hostRoom;$('onMe').classList.toggle('mid',guest&&NET.gst!=='title');
   document.querySelectorAll('#onType button').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.t===NET.room));b.disabled=netOn()&&b.dataset.t!==NET.room;});
-  $('onBNBox').hidden=!(hostRoom&&brawl);$('onBNum').textContent=Math.max(NET.bN,1+NET.peers.length);
+  $('onBNBox').hidden=!(hostRoom&&brawl);$('onBMode').hidden=!(hostRoom&&brawl);
+  if(hostRoom&&brawl){const n=brawlRoomN();$('onBNum').textContent=NET.bTeam?(n/2)+' 대 '+(n/2):n;$('onBUnit').hidden=NET.bTeam;document.querySelectorAll('#onBMode button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.m===(NET.bTeam?1:0))));}
+  {const lb=hostRoom?null:NET.lobby,tm=brawl&&lobby&&(hostRoom?NET.bTeam:!!(lb&&lb.tm)),mine=hostRoom?NET.myTeam:lb?((lb.pl.find(q=>q.s===NET.slot)||{}).t):null,cnt=s=>hostRoom?sideCount(s):lb?lb.pl.filter(q=>q.t===s).length:0;
+    $('onTeam').hidden=!tm||!(hostRoom||guest);document.querySelectorAll('#onTeam button').forEach(b=>{const s=+b.dataset.t;b.setAttribute('aria-pressed',String(s===mine));b.disabled=s!==mine&&cnt(s)>=5;});}
   {const nm=$('onName');if(document.activeElement!==nm&&nm.value!==myName())nm.value=myName();nm.parentNode.hidden=!lobby;}
   // the seats of a brawl room
   {const L=$('onList'),lb=hostRoom?netSeats():NET.lobby;L.hidden=!(brawl&&lb&&(hostRoom||guest)&&lobby);
     if(!L.hidden){const sig=JSON.stringify(lb)+'|'+NET.slot+'|'+hostRoom;if(L.dataset.sig!==sig){L.dataset.sig=sig;L.textContent='';
-      for(const pl of lb.pl.slice().sort((a,b)=>a.s-b.s)){const li=document.createElement('li');li.innerHTML='<i></i><span></span><em></em>';li.querySelector('i').style.background=BRAWL[pl.s]?BRAWL[pl.s].c:'#888';
-        li.querySelector('span').textContent=(pl.nm||BRAWL[pl.s].n)+(pl.s===0?' (방장)':'')+((guest&&pl.s===NET.slot)||(hostRoom&&pl.s===0)?' · 나':'');li.querySelector('em').textContent=WEAPONS[pl.w]?WEAPONS[pl.w].name:'';L.appendChild(li);}
-      const bots=Math.max(lb.n,lb.pl.length)-lb.pl.length;if(bots>0){const li=document.createElement('li');li.className='bots';li.textContent='+ 컴퓨터 '+bots+'명';L.appendChild(li);}}}}
-  if(hostRoom){$('onCodeTxt').textContent=pairCode||'·····';$('onLinkTxt').textContent=pairCode?location.href.split('#')[0]+'#o='+pairCode:'';$('onStart').hidden=!netOn()||state!=='title';$('onStart').firstChild.textContent=brawl?'난투 시작':'결투 시작';
+      const row=(pl,col)=>{const li=document.createElement('li');li.innerHTML='<i></i><span></span><em></em>';li.querySelector('i').style.background=col;
+        li.querySelector('span').textContent=(pl.nm||BRAWL[pl.s].n)+(pl.s===0?' (방장)':'')+((guest&&pl.s===NET.slot)||(hostRoom&&pl.s===0)?' · 나':'');li.querySelector('em').textContent=WEAPONS[pl.w]?WEAPONS[pl.w].name:'';L.appendChild(li);},
+        botRow=b=>{if(b>0){const li=document.createElement('li');li.className='bots';li.textContent='+ 컴퓨터 '+b+'명';L.appendChild(li);}};
+      if(lb.tm)for(const s of[0,1]){const on=lb.pl.filter(q=>q.t===s).sort((a,b)=>a.s-b.s),hd=document.createElement('li');hd.className='thead';hd.textContent=TEAMS[s].n+' · '+on.length+'명';L.appendChild(hd);
+          on.forEach(pl=>row(pl,TEAMS[s].c));botRow(lb.n/2-on.length);}
+      else{for(const pl of lb.pl.slice().sort((a,b)=>a.s-b.s))row(pl,BRAWL[pl.s]?BRAWL[pl.s].c:'#888');botRow(Math.max(lb.n,lb.pl.length)-lb.pl.length);}}}}
+  if(hostRoom){$('onCodeTxt').textContent=pairCode||'·····';$('onLinkTxt').textContent=pairCode?location.href.split('#')[0]+'#o='+pairCode:'';$('onStart').hidden=!netOn()||state!=='title';$('onStart').firstChild.textContent=brawl?(NET.bTeam?'팀전 시작':'난투 시작'):'결투 시작';
     if(!netOn())netSay(pairState==='ready'?(brawl?'사람들을 기다리는 중… 코드나 링크를 알려 주세요. 9명까지 들어올 수 있어요.':'상대를 기다리는 중… 상대에게 코드나 링크를 알려 주세요.'):pairState==='lib'?'연결 라이브러리를 불러오지 못했어요. 인터넷 연결을 확인하세요.':pairState==='error'?'연결 오류가 났어요. 페이지를 새로 고쳐 주세요.':'방을 여는 중…');
-    else if(state==='title')netSay(brawl?NET.peers.length+'명 들어왔어요. 난투 시작을 누르면 빈자리는 컴퓨터가 채워요.':'상대가 들어왔어요 · 상대 무기: '+WEAPONS[K[1].weapon].name+'. 결투 시작을 누르세요.');}
+    else if(state==='title')netSay(brawl?NET.peers.length+'명 들어왔어요. '+(NET.bTeam?'팀을 고른 뒤 팀전':'난투')+' 시작을 누르면 빈자리는 컴퓨터가 채워요.':'상대가 들어왔어요 · 상대 무기: '+WEAPONS[K[1].weapon].name+'. 결투 시작을 누르세요.');}
   if(guest||(hostRoom&&pairCode)){const me=guest?1:0,seat=guest?(brawl?NET.slot:1):0,now=performance.now(),hp=K[0].phone,ph=guest?(brawl?(NET.pha?NET.pha[seat]:0):NET.ph):hp&&now-hp.seen<6000?(now-hp.last<3000?2:1):0;
     $('onWho').textContent=brawl?'내 무기':'내 무기 ('+(me+1)+'P)';document.querySelectorAll('#onW button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.w===K[me].weapon)));
     {const cv=$('onQR'),u=location.href.split('#')[0]+'#j='+(guest?NET.code:pairCode)+'&p='+seat+(HASH.has('bc')?'&bc=1':'');if(cv.dataset.u!==u){cv.dataset.u=u;cv.hidden=!drawQR(cv,u);}}
     const pt=$('onPhoneTxt');if(pt)pt.textContent=ph===2?'폰 연결됨. 폰 위쪽이 칼끝이에요.':ph===1?'폰 연결됨. 폰에서 센서 켜기를 눌러 주세요.':'폰을 무기로 쓰려면 이 QR을 폰으로 찍으세요.';}
   if(guest){$('title').hidden=true;
     const mid=NET.gst!=='title';
-    if(!mid)netSay(brawl?'난투 방이에요 · '+(NET.lobby?NET.lobby.pl.length:1)+'명이 모였어요. 호스트가 시작하면 바로 시작돼요.':'연결됐어요 · 호스트 무기: '+WEAPONS[K[0].weapon].name+'. 호스트가 결투를 시작하면 바로 시작돼요.');else netSay(brawl?'난투 중이에요. 방을 나가면 내 기사는 컴퓨터가 이어서 싸워요.':'경기 중이에요. 방을 나가면 결투가 끝나요.');}
+    if(!mid)netSay(brawl?(NET.lobby&&NET.lobby.tm?'팀전 방이에요 ('+NET.lobby.n/2+' 대 '+NET.lobby.n/2+') · 팀을 고르세요. ':'난투 방이에요 · ')+(NET.lobby?NET.lobby.pl.length:1)+'명이 모였어요. 호스트가 시작하면 바로 시작돼요.':'연결됐어요 · 호스트 무기: '+WEAPONS[K[0].weapon].name+'. 호스트가 결투를 시작하면 바로 시작돼요.');else netSay(brawl?'난투 중이에요. 방을 나가면 내 기사는 컴퓨터가 이어서 싸워요.':'경기 중이에요. 방을 나가면 결투가 끝나요.');}
   $('onResume').hidden=!(guest&&NET.gst!=='title');
   $('onClose').firstChild.textContent=hostRoom||NET.guest?'방 나가기':'닫기';}
 function netGuestPanel(){if(!NET.guest||!NET.conn||NET.gst==='title')return;NET.panel=$('online').hidden;$('online').hidden=!NET.panel;netLobbyUi();}
